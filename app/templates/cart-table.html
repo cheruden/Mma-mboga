@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="static/bootstrap.css" rel ="stylesheet" type="text/css" media="all">
+    <link href="static/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png">
+      
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/logo.png" alt="">
+          </a>
+          <h2 class="title">Mama mboga</h2>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>Pizza">
+                <a class="nav-link" href="cart-table.html">Order</a>
+				
+					<a class="nav-link" href="landing.html">Menu</a>
+
+					<a class="nav-link" href="index.html">Home
+						<span class="sr-only">(current)</span>
+
+        				     			 </li>
+          					 		 </ul>
+         						 </div>
+       						 </div>
+      					</nav>
+   					 
+                  </div>
+                  <div class="row container">
+                    <div class="col"><p>Quantity</p></div>
+                    <div class="col" class="form-option">
+                      <select required class="form-control" id="crust">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                       
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row container">
+                    <div class="col"><p>how fresh</p></div>
+                    <div class="col" class="form-option">
+                      <select required class="form-control" id="cheese">
+                        <option></option>
+                        <option value="sort of fresh">sort of fresh</option>
+
+                        <option value="mild fresh">ild fresh</option>
+                        <option value="extra extra fesh">extra extra fesh</option>
+                        <option value="dont mind">dont mind</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row container">
+                    <div class="col"><p>packaging (+Ksh.150)</p></div>
+                    <div class="col" class="form-option">
+                      <select required class="form-control" id="toppings">
+                        <option></option>
+                        <option value="cool-pack">cool-pack</option>
+                        <option value="decent">decent</option>
+                        
+                      </select>
+                    </div>
+                 
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger" id="submit-custom-pizza">Place Order</button>
+              </form>
+            </div>
+            <div class="col" id="price-content">
+              <h1 class="page-header">Your Order</h1>
+              <h2>Price: Ksh. <span id="final-cost"></span></h2>
+              <div id="order-details">
+                <p><a id="pizza-details-dropdown">Fruit</a></p>
+                <ul id="pizza-details"></ul>
+                <p><a id="default-pizza-dropdown">Veges</a></p>
+                <ul id="default-pizza-details"></ul>
+              </div>
+              <button type="btn" class="btn btn-danger" id="checkout-btn">Checkout</button>
+              <h3><span id="delivery-option"></span></h3>
+              <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
+            </div>
+          </div>
+          <div class="form-group" id="address">
+            <h3>Delivery Address</h3>
+            <form id="address-form">
+              <div class="row">
+                <div class="col">
+                  <label for="first-name">First Name</label><input required type="text" class="form-control address-spacing">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for="street-address">Address</label><input required type="text" class="form-control" id="street-add">
+                </div>
+                <div class="col">
+                  <label for="city-name">City</label><input required type="text" class="form-control" id="city-add">
+                </div>
+                <div class="col">
+                  <label for="county-name">County</label>
+                  <select required class="form-control delivery-address" id="county-select">
+                    <option></option>
+                    <option>Nairobi</option>
+                    <option>Nakuru</option><li class="nav-item">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" id="order-proceed-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="static/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   
+</body>
+</html>
